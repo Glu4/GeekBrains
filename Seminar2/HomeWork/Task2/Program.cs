@@ -4,29 +4,20 @@
         //32679 -> 6
         Console.Write("Введите число: ");
         int number = int.Parse(Console.ReadLine());
-        while(true)
-        {
-
         
-            if (number < 99)
-    
-       
-
-        Console.WriteLine("В числе нет третьей цифры");
         
-         
+        {    if (number < 99)
         {
-            break;
-        }
-            
-        }
+            Console.WriteLine("В числе нет третьей цифры");
+        return;
+            }}
+           
+        string numberString = number.ToString(); 
+        
+        char thirdChar = numberString[2]; 
+        int thirdDigit = int.Parse(thirdChar.ToString()); 
 
+        Console.WriteLine($"Третья цифра: {thirdDigit}"); 
 
-        int thirdDigit = number % 10;
-
-        if (thirdDigit != 0)
-        {
-            Console.WriteLine($"Третья цифра числа: {thirdDigit}");
-            }
 
         
