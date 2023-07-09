@@ -18,6 +18,6 @@
             }
             else
             {
-                Console.WriteLine("Введенное число должно быть от 1 до 7");
+                Console.WriteLine("В неделе только 7 дней!");
             }
         }
