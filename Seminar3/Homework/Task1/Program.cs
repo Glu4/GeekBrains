@@ -6,7 +6,7 @@
 
 class Program
 {
-    static bool IsPalindrome(int number)
+    static bool Palindrome(int number)
     {
         int temp = number;
         int reversedNumber = 0;
@@ -32,7 +32,7 @@ class Program
             return;
         }
 
-        if (IsPalindrome(number))
+        if (Palindrome(number))
         {
             Console.WriteLine("Да, число является палиндромом.");
         }
