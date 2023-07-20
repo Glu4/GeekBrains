@@ -14,24 +14,23 @@
             array[i] = random.Next(100, 1000); 
         }
 
-        // Выводим исходный массив
+    
         Console.WriteLine("Исходный массив:");
         PrintArray(array);
 
-        // Вычисляем сумму элементов на нечётных позициях
+       
         int arraysum = Calculatearraysum(array);
 
-        // Выводим результат
         Console.WriteLine($"Сумма элементов на нечётных позициях: {arraysum}");
     }
 
-    // Метод для вывода массива в консоль
+    
     static void PrintArray(int[] arr)
     {
         Console.WriteLine("[" + string.Join(", ", arr) + "]");
     }
 
-    // Метод для вычисления суммы элементов на нечётных позициях
+   
     static int Calculatearraysum(int[] arr)
     {
         int sum = 0;
